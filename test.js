@@ -4,8 +4,14 @@ const Agent = require('./lib/agent');
 var url = require('url').parse("http://nwalker.org");
 var agent = new Agent({redisConnection: {}});
 
-var req = new Request(url, undefined, agent);
+/*var req = new Request(url, undefined, agent);
 req.exec().then((data) => {
+	debugger;
+}).catch((err) => {
+	throw err;
+});*/
+
+agent.makeRequest(url).then((data) => {
 	debugger;
 }).catch((err) => {
 	throw err;
