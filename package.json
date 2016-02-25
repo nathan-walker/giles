@@ -8,6 +8,7 @@
   },
   "author": "Nathan Walker <me@nwalker.org> (http://nwalker.org)",
   "license": "MIT",
+  "repository": "nathan-walker/giles",
   "dependencies": {
     "es6-promisify": "^3.0.0",
     "escape-string-regexp": "^1.0.5",
